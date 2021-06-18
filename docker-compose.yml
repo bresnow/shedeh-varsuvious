@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  ghost-theme-docker:
+    image: ghostlocal:latest
+    container_name: ghost-theme-docker
+    restart: unless-stopped
+    volumes:
+      - './data:/var/lib/ghost/content/data'
+      - './images:/var/lib/ghost/content/images'
+      - './settings:/var/lib/ghost/content/settings'
+      - './themes:/var/lib/ghost/content/themes'
+    ports:
+      - "3102:2368"
+    environment:
+      - NODE_ENV=development
