@@ -1,5 +1,5 @@
 FROM ghost
-LABEL maintainer="bresnow-zalmon"
+LABEL maintainer="bresnow"
 
 # Set the working directory.
 WORKDIR /var/lib/ghost

@@ -10,6 +10,7 @@ services:
       - './images:/var/lib/ghost/content/images'
       - './settings:/var/lib/ghost/content/settings'
       - './themes:/var/lib/ghost/content/themes'
+      
     ports:
       - "3102:2368"
     environment:
