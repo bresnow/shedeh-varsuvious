@@ -30,6 +30,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "eden/fonts.css";
 @import "eden/helper.css";
 @import "eden/responsive.css";
+@import "eden/style.css";
 
 
 /* Main - Your styles here! Edit below
@@ -40,7 +41,7 @@ html,
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #fff;
+    background: rgb(30, 30, 30);
 }
 
 .gh-main {
@@ -104,6 +105,7 @@ html,
     max-height: 700px;
     object-fit: cover;
     margin-bottom: 4vmin;
+    border-radius: 5rem;
 }
 
 .gh-card-meta {
@@ -241,5 +243,9 @@ html,
 @media (max-width: 700px) {
     .gh-author-meta {
         font-size: 1.6rem;
-    }
+    } 
 }
+
+
+
+
