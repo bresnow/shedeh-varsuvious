@@ -14,9 +14,11 @@
 
 </head>
 <body class="{{body_class}}">
+
+     {{> nav}}
 <div class="gh-viewport">
 
-<header id="gh-head" class="gh-head">
+{{!-- <header id="gh-head" class="gh-head">
     <nav class="gh-head-inner gh-container">
 
         <div class="gh-head-brand">
@@ -48,7 +50,7 @@
             </div>
         </div>
     </nav>
-</header>
+</header> --}}
 
 <main class="gh-main">
 {{> info}}
@@ -137,6 +139,6 @@ $(document).ready(function () {
 
 {{ghost_foot}}
 {{!-- Outputs important scripts - should always be included before closing body tag --}}
-
+</foot>
 </body>
 </html>

@@ -31,7 +31,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "eden/helper.css";
 @import "eden/responsive.css";
 @import "eden/style.css";
-
+@import "color/color.css";
 
 /* Main - Your styles here! Edit below
 /* ---------------------------------------------------------- */
