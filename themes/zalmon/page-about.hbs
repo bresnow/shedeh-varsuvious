@@ -2,14 +2,13 @@
 
 {{#post}}
 <div class="wrapper">
-
-<article class="gh-article {{post_class}}">
-     {{> slider}}
-<div class="info-holder">
+    {{!-- {{> slider}} --}}
+ <div class="info-holder"> --}}
+        <!-- info -->
     <div class="info">
-                <div class="img-frame wow fadeInLeft" data-wow-delay="0.6s">
+            <div class="img-frame wow fadeInLeft" data-wow-delay="0.6s">
                 <div class="text">
-                    <span class="num">βτεsηΘω</span>
+                    <span class="num">01</span>
                     <h2 class="tild">{{author.name}}</h2>
                     <div class="box">
                         <div class="box-inner">
@@ -22,10 +21,19 @@
                 <div class="image wow fadeInRight" data-wow-delay="0.6s"><img src="{{profile_image}}" alt="{{name}}">
                 </div>
             </div>
+      <div class="txt-frame wow fadeInUp" data-wow-delay="0.6s">
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <div class="signature">
+                    <img src="images/img-03.jpg" alt="signature">
+                </div>
+            </div>
+        </div>
+{{!-- <article class="gh-article {{post_class}}">
+
 </div>
     <header class="gh-header gh-canvas">
         <h1 class="gh-title">{{title}}</h1>
-
         {{#if custom_excerpt}}
             <p class="gh-excerpt">{{custom_excerpt}}</p>
         {{/if}}
@@ -39,6 +47,6 @@
         {{content}}
     </div>
 
-</article>
+</article> --}}
 </div>
 {{/post}}
