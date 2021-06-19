@@ -53,6 +53,7 @@
 </header> --}}
 
 <main class="gh-main">
+    {{> slider}}
 {{> info}}
     {{{body}}}
     {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
@@ -120,7 +121,7 @@ $(document).ready(function () {
                 adaptiveHeight: true,
                 autoplay: true,
                 arrows: false,
-                speed: 800,
+                speed: 1500,
                 dots: true,
                 fade: true
             });
