@@ -1330,6 +1330,7 @@
 
   .navbar-toggle {
     margin-right: 0;
+    margin-top: -5rem;
   }
 
   #header .navbar-nav a:after,

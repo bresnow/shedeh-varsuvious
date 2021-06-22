@@ -1,9 +1,9 @@
 /*
-Theme Name: EAGLEEYES
-Author: Anonymous
+Theme Name: Zalmon
+Author: βτεsηΘω.
 Author URI:
 Version: 1
-Description: Base theme for Wordpress
+Description: Base theme for Ghost
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: base
@@ -137,7 +137,7 @@ Theme URI:
 .masonry-holder .masonry,
 .masonry-holder .masonry .caption .icons,
 .project-area ul {
-	margin: 0;
+	margin: 10;
 	padding: 0;
 	list-style: none;
 }
@@ -1033,7 +1033,7 @@ a:focus {
 
 #header {
 	padding: 33px 0 17px;
-	background: #fff;
+	background: #eff3f6; /* TODO: change color */
 	margin-top: -100px;
 }
 
@@ -1075,6 +1075,7 @@ a:focus {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: bold;
+	
 }
 
 .logo .icon {
@@ -2460,7 +2461,7 @@ a:focus {
 
 .info .txt-frame .text-box h2 a {
 	text-decoration: none;
-	color: #252525;
+	color: #e5e5e5;
 	-webkit-transition: all ease .5s;
 	transition: all ease .5s;
 }

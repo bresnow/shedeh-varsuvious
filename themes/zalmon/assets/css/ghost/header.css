@@ -35,14 +35,14 @@
 
 .gh-head-logo {
     display: block;
-    padding: 10px 0;
+    padding-left: 10% ;
     font-weight: 600;
     font-size: 2.2rem;
     line-height: 1.2em;
 }
 
 .gh-head-logo img {
-    max-height: 40px;
+    max-height: 88px;
 }
 
 
@@ -259,6 +259,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     }
     #gh-head .gh-head-logo {
         font-size: 2.2rem;
+        padding-left: 30%;
     }
     #gh-head .gh-head-logo img {
         max-height: 40px;

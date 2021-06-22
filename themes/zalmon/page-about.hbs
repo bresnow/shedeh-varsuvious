@@ -3,17 +3,17 @@
 {{#post}}
 <div class="wrapper">
     {{!-- {{> slider}} --}}
- <div class="info-holder"> --}}
+ <div class="info-holder"> 
         <!-- info -->
     <div class="info">
-            <div class="img-frame wow fadeInLeft" data-wow-delay="0.6s">
+            <div class="column img-frame wow fadeInLeft" data-wow-delay="0.6s">
+                <div class="img"></div>
                 <div class="text">
-                    <span class="num">01</span>
-                    <h2 class="tild">{{author.name}}</h2>
+                    <span class="num">{{primary_author.name}}</span>
+                    <h2 class="tild"></h2>
                     <div class="box">
                         <div class="box-inner">
-                            <h3>Louis Frank</h3>
-                            <p>Co-Founder at Eagleeyes</p>
+                            <h3>{{title}}</h3>
                         </div>
                     </div>
                 </div>
@@ -21,13 +21,16 @@
                 <div class="image wow fadeInRight" data-wow-delay="0.6s"><img src="{{profile_image}}" alt="{{name}}">
                 </div>
             </div>
-      <div class="txt-frame wow fadeInUp" data-wow-delay="0.6s">
-                <h3>{{title}}</h3>
-                <p>{{content}}</p>
+      <div class="column txt-frame wow fadeInUp" data-wow-delay="0.6s">
+                {{#if custom_excerpt}}
+                <p>{{custom_excerpt}}</p>
+                {{/if}}
                 <div class="signature">
-                    <img src="images/img-03.jpg" alt="signature">
+                    <img src="" alt="signature">
                 </div>
             </div>
+        </div>
+        </div>
         </div>
 {{!-- <article class="gh-article {{post_class}}">
 

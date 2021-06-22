@@ -15,9 +15,9 @@
 </head>
 <body class="{{body_class}}">
 
-     {{> nav}}
+     <div class="wrapper">
 <div class="gh-viewport">
-
+{{navigation}}
 {{!-- <header id="gh-head" class="gh-head">
     <nav class="gh-head-inner gh-container">
 
@@ -54,23 +54,18 @@
 
 <main class="gh-main">
     
-{{> info}}
-    {{{body}}}
+      {{{body}}}
     {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
-
 </main>
 
-<footer class="gh-foot">
+{{!-- <footer class="gh-foot">
     <div class="gh-container">
         <div class="gh-foot-menu">
-            {{navigation}}
-        </div>
-        <div class="gh-foot-meta">
-            Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+            
         </div>
     </div>
-</footer>
-
+</footer> --}}
+{{> footer}}
 </div>
 
 {{!-- <foot> --}}
@@ -141,5 +136,6 @@ $(document).ready(function () {
 {{ghost_foot}}
 {{!-- Outputs important scripts - should always be included before closing body tag --}}
 </foot>
+</div>
 </body>
 </html>
