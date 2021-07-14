@@ -102,10 +102,10 @@ html,
 
 .gh-card-image {
     width: 100%;
-    max-height: 700px;
+    max-height: 200px;
     object-fit: cover;
     margin-bottom: 4vmin;
-    border-radius: 5rem;
+    border-radius: 2rem;
 }
 
 .gh-card-meta {

@@ -93,6 +93,7 @@
 
   .f2 .sub-nav li {
     margin: 0 50px 0 0;
+    padding-right: 10px;
   }
 
   .f2,
@@ -2080,5 +2081,36 @@
     }
     .error-sec .sub-title{
       margin: 0 0 70px;
+    }
+}
+
+/* phones and smaller */
+
+@media only screen and (max-width: 420px) {
+  /* .visual .slide .image {
+    max-width : 80%;
+    overflow-x: visible;
+  } */
+
+  .visual .slide .caption h1 .add,
+  .visual .slide .caption h1 .add2 {
+    font-size            : 40px;
+    margin-left          : -60%;
+    background-blend-mode: color-burn;
+    line-height          : 1.5em;
+  }
+
+  .visual .slide .image {
+    max-height: 25em;
+    margin: 0;
+  }
+  .visual .slide .caption .text .txt{
+    font-size: 14px;
+    display: flex;
+    max-width: 80%;
+    margin-left: -20%;
+  }
+    .visual .slide .caption .text {
+      margin-left: 10%;
     }
 }

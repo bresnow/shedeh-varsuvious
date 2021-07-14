@@ -5,8 +5,44 @@
 <article class="gh-article {{post_class}}">
 
     <header class="gh-header gh-canvas">
+            <div class="info-holder">
+                <!-- info -->
+                <div class="info">
+                    <div class="img-frame wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="text">
+                            <span class="num">01</span>
+                            <h2 class="tild">ABOUT US</h2>
+                            <div class="box">
+                                <div class="box-inner">
+                                    <h3>Louis Frank</h3>
+                                    <p>Co-Founder at Eagleeyes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image wow fadeInRight" data-wow-delay="0.6s"><img src="http://placehold.it/570x715"
+                                alt="image description"></div>
+                    </div>
+                    <div class="txt-frame wow fadeInUp" data-wow-delay="0.6s">
+                        <h3>About Us</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem laudanm, totam rem
+                            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed ttquia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <div class="signature">
+                            <img src="images/img-03.jpg" alt="signature">
+                        </div>
+                    </div>
+                </div>
+                </div>
         <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
         <h1 class="gh-title">{{title}}</h1>
+        <div class="gh-post-authors">
+            Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a> {{#if profile_image}}
+            <img class="gh-author-image" src="{{profile_image}}" alt="{{name}}" />
+            {{/if}}{{/foreach}}
+        </div>
 
         {{#if custom_excerpt}}
         <p class="gh-excerpt">{{custom_excerpt}}</p>
@@ -32,9 +68,7 @@
 
     <footer class="gh-footer gh-canvas">
 
-        <div class="gh-post-authors">
-            Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
-        </div>
+        
 
         {{!--
         <section class="gh-post-comments">

@@ -2730,3 +2730,21 @@
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+@keyframes glorp {
+  0% {
+    border-radius: 0;
+  }
+  60% {
+    border-top-left-radius: 30% ;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius:40%;
+  }
+  100% {
+    border-top-left-radius   : 40%;
+border-top-right-radius  : 70%;
+border-bottom-left-radius: 20%;
+border-bottom-right-radius:50%;
+  }
+}
