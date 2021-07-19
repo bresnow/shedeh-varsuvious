@@ -2,7 +2,8 @@ version: '3.7'
 
 services:
   ghost-theme-docker:
-    image: ghostlocal:latest
+    image: ghostlocal
+  
     container_name: ghost-theme-docker
     restart: unless-stopped
     volumes:
