@@ -1,0 +1,32 @@
+<!-- Navigation Area
+        ===================================== -->
+<nav class="navbar navbar-pasific navbar-pasific-inverse navbar-mp navbar-sticky bg-black">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                {{#if @site.logo}}
+                <img class="navbar-brand-img m10 animated" data-animation="bounceIn" data-animation-delay="900" src="{{@site.logo}}" alt="{{@site.title}}" style="min-width: 80px; width: 12%;" />
+                {{else}}
+                {{@site.title}}
+                {{/if}}
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse color-black navbar-main-collapse">
+            <ul class="nav navbar-nav">
+
+                {{#foreach navigation}}
+                <li><a href="{{url absolute=" true"}}" class="color-black">{{label}}
+                    </a>
+                </li>
+                {{/foreach}}
+            </ul>
+            <a href="#" id="buttonHire"
+                class="button button-sm button-grad-day-tripper hover-ripple-out mt10 ml30 mr10 pull-right">Hire
+                Me</a>
+        </div>
+    </div>
+</nav>

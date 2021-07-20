@@ -1,0 +1,28 @@
+
+{{!< default}}
+<div id="formLogin" class="inner cover text-center animated" data-animation="fadeIn" data-animation-delay="100">
+                        <br>
+                        <i class="under-construction color-pink"></i><i class="under-construction color-dark"></i><br>
+                        <h1 class="font-montserrat cover-heading mb20 mt20">Nothing here<a href="{{@site.url}}">Go to the front page →</a></h1><br><br>
+                        <h1 style="font-size: 200px" class="color-pink"><strong>{{statusCode}}</strong></h1>
+                        <br>
+
+                        {{#if errorDetails}}
+                        
+                        <h4 class="font-montserrat">Theme errors:</h4>
+                        <ul class="font-montserrat">
+                            {{#foreach errorDetails}}
+                            <li>
+                                <h5 class="font-montserrat">{{{rule}}}</h5>
+                        
+                                {{#foreach failures}}
+                                <span class="font-montserrat"><strong>Ref:</strong> {{ref}}</span><br>
+                                <span class="font-montserrat"><strong>Message:</strong> {{message}}</span>
+                                {{/foreach}}
+                            </li>
+                            {{/foreach}}
+                        </ul>
+                        {{/if}}
+
+                    </div>
+                 
