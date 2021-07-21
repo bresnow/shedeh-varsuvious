@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+
+<head>
+    <title>{{meta_title}}</title>
+    <meta charset="utf-8">
+    <meta name="author" content="βτεsηΘω">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    {{!--
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{asset "img/favicon.png"}}">
+    <link rel="apple-touch-icon" href="{{asset "img/apple-touch-icon.png"}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset "img/apple-touch-icon-72x72.png"}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{asset "img/apple-touch-icon-114x114.png"}}"> --}}
+
+    <!-- Load Core CSS 
+        =====================================-->
+    <link rel="stylesheet" href="{{asset "css/core/bootstrap-3.3.7.min.css"}}">
+    <link rel="stylesheet" href="{{asset "css/core/animate.min.css"}}">
+
+    <!-- Load Main CSS 
+        =====================================-->
+    <link rel="stylesheet" href="{{asset "css/main/main.css"}}">
+    <link rel="stylesheet" href="{{asset "css/main/setting.css"}}">
+    <link rel="stylesheet" href="{{asset "css/main/hover.css"}}">
+
+    <!-- Load Magnific Popup CSS 
+        =====================================-->
+    <link rel="stylesheet" href="{{asset "css/magnific/magic.min.css"}}">
+    <link rel="stylesheet" href="{{asset "css/magnific/magnific-popup.css"}}">
+    <link rel="stylesheet" href="{{asset "css/magnific/magnific-popup-zoom-gallery.css"}}">
+
+    <!-- Load OWL Carousel CSS 
+        =====================================-->
+    <link rel="stylesheet" href="{{asset "css/owl-carousel/owl.carousel.css"}}">
+    <link rel="stylesheet" href="{{asset "css/owl-carousel/owl.theme.css"}}">
+    <link rel="stylesheet" href="{{asset "css/owl-carousel/owl.transitions.css"}}">
+
+    <!-- Load Color CSS - Please uncomment to apply the color. -->
+        =====================================      
+        <link rel="stylesheet" href="{{asset "css/color/blue.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/brown.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/cyan.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/dark.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/green.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/orange.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/purple.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/pink.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/red.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/yellow.css"}}">
+        <link rel="stylesheet" href="{{asset "css/color/pasific.css"}}">
+    <link rel="stylesheet" href="{{asset "css/color/bw.css"}}">
+
+    <!-- Load Fontbase Icons - Please Uncomment to use linea icons
+        =====================================       
+        <link rel="stylesheet" href="{{asset "css/icon/linea-arrows-10.css"}}">
+        <link rel="stylesheet" href="{{asset "css/icon/linea-basic-10.css"}}">
+        <link rel="stylesheet" href="{{asset "css/icon/linea-basic-elaboration-10.css"}}">
+        <link rel="stylesheet" href="{{asset "css/icon/linea-ecommerce-10.css"}}">
+        <link rel="stylesheet" href="{{asset "css/icon/linea-music-10.css"}}">
+        <link rel="stylesheet" href="{{asset "css/icon/linea-software-10.css"}}">
+        <link rel="stylesheet" href="{{asset "css/icon/linea-weather-10.css"}}">-->
+    <link rel="stylesheet" href="{{asset "css/icon/font-awesome.css"}}">
+    <link rel="stylesheet" href="{{asset "css/icon/et-line-font.css"}}">
+
+    <!-- Load JS
+        HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        WARNING: Respond.js doesn't work if you view the page via file://
+        =====================================-->
+
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}}"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}}"></script>
+        <![endif]-->
+
+    {{ghost_head}}
+    {{!-- Outputs important meta data and settings, should always be in
+
+    <head> --}}
+
+    </head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="100" class="{{body_class}}">
+    <!-- Page Loader
+            ===================================== -->
+    <div id="pageloader" class="bw bg-grad-animation-2">
+        <div class="loader-item">
+            <img src="assets/img/other/oval.svg" alt="page loader">
+        </div>
+    </div>
+
+    <a href="#page-top" class="go-to-top">
+        <i class="fa fa-long-arrow-up"></i>
+    </a>
+
+{{navigation}}
+        </header>
+
+        <main class="gh-main">
+
+            {{{body}}}
+            {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
+
+        </main>
+
+        <!-- Footer Area
+            =====================================-->
+        <footer id="footer" class="footer footer-one center-block pt30 bg-black">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center bb-dashed-1-dark pb25">
+                        <h3 class="font-pacifico color-dark">Thanks for visiting my site.</h3>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="social social-one">
+                            <a href="{{facebook_url @site.facebook}}"><i class="fa fa-facebook color-gray"></i></a>
+                            <a href="{{twitter_url @site.twitter}}"><i class="fa fa-twitter color-gray"></i></a>
+                            <a href="#"><i class="fa fa-youtube color-gray"></i></a>
+                            <a href="#"><i class="fa fa-linkedin color-gray"></i></a>
+                            <a href="#"><i class="fa fa-pinterest color-gray"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 mt25">
+                        <span class="copyright">Copyright &copy;<time
+                                datetime="{{date format=" YYYY"}}">{{date
+                                format="YYYY"}}</time> βτεsηΘω.Ðεsιɠη. All rights reserved.</span>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JQuery Core
+                =====================================-->
+    <script src="{{asset "js/core/jquery.min.js"}}"></script>
+    <script src="{{asset "js/core/bootstrap-3.3.7.min.js"}}"></script>
+
+    <!-- Magnific Popup
+                =====================================-->
+    <script src="{{asset "js/magnific-popup/jquery.magnific-popup.min.js"}}"></script>
+    <script src="{{asset "js/magnific-popup/magnific-popup-zoom-gallery.js"}}"></script>
+
+    <!-- Progress Bars
+                =====================================-->
+    <script src="{{asset "js/progress-bar/circle-progress.js"}}"></script>
+    <script src="{{asset "js/progress-bar/circle-progress-main.js"}}"></script>
+
+    <!-- JQuery Main
+                =====================================-->
+    <script src="{{asset "js/main/jquery.appear.js"}}"></script>
+    <script src="{{asset "js/main/isotope.pkgd.min.js"}}"></script>
+    <script src="{{asset "js/main/parallax.min.js"}}"></script>
+    <script src="{{asset "js/main/jquery.countTo.js"}}"></script>
+    <script src="{{asset "js/main/owl.carousel.min.js"}}"></script>
+    <script src="{{asset "js/main/jquery.sticky.js"}}"></script>
+    <script src="{{asset "js/main/ion.rangeSlider.min.js"}}"></script>
+    <script src="{{asset "js/main/imagesloaded.pkgd.min.js"}}"></script>
+    <script src="{{asset "js/main/main.js"}}"></script>
+
+    <!-- Google Map
+                =====================================-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="{{asset "js/main/googlemap.js"}}"></script>
+
+    {{ghost_foot}}
+    {{!-- Outputs important scripts - should always be included before closing body tag --}}
+
+</body>
+
+</html>

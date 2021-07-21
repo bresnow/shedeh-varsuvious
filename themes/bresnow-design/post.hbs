@@ -1,0 +1,125 @@
+{{!< default}}
+
+{{#post}}
+ <!-- Subheader Area
+        ===================================== -->
+        <header class="bg-grad-stellar mt70">
+
+            <div class="container">
+                <div class="row mt20 mb30">
+                    <div class="col-md-6 text-left">
+                        <h3 class="color-light text-uppercase animated" data-animation="fadeInUp" data-animation-delay="100">{{title}} {{#if custom_excerpt}}<small class="color-light alpha7">{{custom_excerpt}}</small>{{/if}}</h3>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+ <!-- Blog Area
+        ===================================== -->
+        <section id="blog" class="pt75 pb50">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        
+                        <div class="blog-three-mini">
+                            <h2 class="color-dark"><a href="#">How to design good layout for blog page</a></h2>
+                            <div class="blog-three-attrib">
+                                <div><i class="fa fa-calendar"></i><time datetime="{{date format=" YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time></div> | 
+                                <div><i class="fa fa-pencil"></i>Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}</div> | 
+                                <div><i class="fa fa-comment-o"></i><a href="#">90 Comments</a></div> | 
+                                <div><a href="#"><i class="fa fa-thumbs-o-up"></i></a>150 Likes</div> | 
+                                <div>
+                                    Share:  <a href="#"><i class="fa fa-facebook-official"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </div>
+
+                            
+                            <h3 class="mt25 mb25">Heading Title Two</h3>
+                            <p>
+                            {{content}}
+                            </p>
+                            <blockquote>
+                                Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.
+                                <footer><i class="fa fa-quote-right mt25"></i> Steve Job</footer>
+                            </blockquote>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                            </p>
+                            <h4 class="mt25 mb25">Heading Title Three</h4>
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                            </p>
+                            
+                            <div class="blog-post-read-tag mt50">
+                                <i class="fa fa-tags"></i> Tags: {{tags}}
+                            </div>
+                            
+                        </div>
+<article class="gh-article {{post_class}}">
+
+    <header class="gh-header gh-canvas">
+        <span class="gh-post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
+        <h1 class="gh-title">{{title}}</h1>
+
+        {{#if custom_excerpt}}
+        <p class="gh-excerpt">{{custom_excerpt}}</p>
+        {{/if}}
+
+        {{#if feature_image}}
+        <figure class="gh-feature-image">
+            <img
+                srcset="{{img_url feature_image size="s"}} 300w,
+                        {{img_url feature_image size="m"}} 600w,
+                        {{img_url feature_image size="l"}} 1000w,
+                        {{img_url feature_image size="xl"}} 2000w"
+                sizes="(max-width: 1000px) 1000px, 2000px"
+                loading="lazy"
+                src="{{img_url feature_image size="xl"}}"
+                alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+            />
+            {{#if feature_image_caption}}
+                <figcaption>{{feature_image_caption}}</figcaption>
+            {{/if}}
+        </figure>
+        {{/if}}
+    </header>
+
+    <div class="gh-content gh-canvas">
+        {{content}}
+    </div>
+
+    <footer class="gh-footer gh-canvas">
+
+        <div class="gh-post-authors">
+            Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
+        </div>
+
+        {{!--
+        <section class="gh-post-comments">
+            If you want to embed comments, this is a good place to do it!
+        </section>
+        --}}
+
+    </footer>
+
+</article>
+
+<aside class="gh-readmore">
+    <div class="gh-readmore-inner gh-container">
+        <div class="gh-readmore-next">
+            {{#next_post}}<a href="{{url}}">{{> "icons/arrow-left"}} <h4>{{title}}</h4></a>{{/next_post}}
+        </div>
+        <div class="gh-readmore-prev">
+            {{#prev_post}}<a href="{{url}}">
+                <h4>{{title}}</h4> {{> "icons/arrow-right"}}
+            </a>{{/prev_post}}
+        </div>
+    </div>
+</aside>
+
+{{/post}}
