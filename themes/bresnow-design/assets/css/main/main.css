@@ -74,7 +74,7 @@ h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal !important;
-    color: #000;
+    
     -webkit-font-smoothing: antialiased;
 }
 h1 { font-size: 36px; line-height: 45px; }
@@ -104,7 +104,7 @@ p {
     margin: 0 0 25px 0;
     font-size: 13px;
     line-height: 25px;
-    color: #747474;
+    color: #e5e5e5;
 }
 p strong { font-weight: 600; }
 .lead {
@@ -127,7 +127,7 @@ p strong { font-weight: 600; }
 }
 
 a {
-    color: #111;
+    color: #5285be;
     outline: none;
     -webkit-transition: all .2s ease-in-out;
        -moz-transition: all .2s ease-in-out;
@@ -135,7 +135,7 @@ a {
 }
 a:hover,
 a:focus {
-    color: #111;
+    color: #FF1A75;
     text-decoration: none;
     outline: none;
 }
@@ -3216,6 +3216,11 @@ canvas {
        -moz-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
 }
+#blog a:hover,
+#bloa a i.fa:hover {
+    color: #67b8a5;
+
+}
 #blog h1,
 #blog h2,
 #blog h3,
@@ -3223,6 +3228,7 @@ canvas {
 #blog h5,
 #blog h6 {
     font-family: 'Montserrat', sans-serif;
+    color: #5285be
 }
 #blog nav ul {
     padding-left: 20px;

@@ -163,3 +163,142 @@ FONT ICONS DEMO
 .glyphs.css-mapping input{margin:0;margin-top:5px;padding:8px;line-height:16px;font-size:13px;display:block;width:170px;height:40px;border:1px solid #d8e0e5;-webkit-border-radius:5px;border-radius:5px;background:#fff;outline:0;float:right;}
 .glyphs.css-mapping input:focus{border:1px solid #ff4530;-webkit-box-shadow:inset 0 0 3px #ff4530;box-shadow:inset 0 0 3px #ff4530}
 .glyphs.css-mapping input:hover{-webkit-box-shadow:inset 0 0 3px #ff4530;box-shadow:inset 0 0 3px #ff4530}*/
+
+
+
+.content {
+    width : 70%x;
+    margin: 0 auto;
+}
+
+.kg-image {
+    height: auto;
+    max-width: 60vw;
+    margin-top: 4vh;
+    margin-left: -4vw;
+    
+
+}
+
+.kg-width-wide {
+    position : relative;
+    width    : 100vw;
+    height: 100%;
+    max-width: 100%;
+    margin   : auto calc(50% - 50vw);
+    transform: translateX(calc(50vw - 50%));
+}
+
+.kg-width-full {
+    position    : relative;
+    width       : 100vw;
+    left        : 50%;
+    right       : 50%;
+    margin-left : -50vw;
+    margin-right: -50vw;
+}
+article figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    float: right;
+    padding-bottom: 4vh;
+}
+.kg-bookmark-card {
+    width   : 100%;
+    position: relative;
+}
+
+.kg-bookmark-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    flex-direction : row-reverse;
+    color          : currentColor;
+    font-family    : inherit;
+    text-decoration: none;
+    border         : 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.kg-bookmark-container:hover {
+    text-decoration: none;
+}
+
+.kg-bookmark-content {
+    flex-basis: 0;
+    flex-grow : 999;
+    padding   : 20px;
+    order     : 1;
+}
+
+.kg-bookmark-title {
+    font-weight: 600;
+}
+
+.kg-bookmark-metadata,
+.kg-bookmark-description {
+    margin-top: .5em;
+}
+
+.kg-bookmark-metadata {
+    align-items  : center;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}
+
+.kg-bookmark-description {
+    display           : -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow          : hidden;
+}
+
+.kg-bookmark-icon {
+    display       : inline-block;
+    width         : 1em;
+    height        : 1em;
+    vertical-align: text-bottom;
+    margin-right  : .5em;
+    margin-bottom : .05em;
+}
+
+.kg-bookmark-thumbnail {
+    display   : flex;
+    flex-basis: 24rem;
+    flex-grow : 1;
+}
+
+.kg-bookmark-thumbnail img {
+    max-width     : 100%;
+    height        : auto;
+    vertical-align: bottom;
+    object-fit    : cover;
+}
+
+.kg-bookmark-author {
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+    overflow     : hidden;
+}
+
+.kg-bookmark-publisher::before {
+    content: "•";
+    margin : 0 .5em;
+}
+.fluid-width-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.fluid-width-video-wrapper iframe,
+.fluid-width-video-wrapper object,
+.fluid-width-video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

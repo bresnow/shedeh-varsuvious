@@ -21,7 +21,9 @@
                     {{#foreach posts}}
                     <div class="portfolio-item col-md-4 col-sm-4 col-xs-4 {{tags autolink="false"}}" data-category="">
                         <a href="{{url}}">
-                            <h2 class="color-light hover-bounce-out">{{title}}</h4>
+                            
+                            <h3 class="color-light hover-bounce-out">{{title}}</h3>
+                            
                         </a>
                         <div>
                         <img src="{{#if feature_image}}{{feature_image}}{{else}}{{@blog.cover_image}}{{/if}}"

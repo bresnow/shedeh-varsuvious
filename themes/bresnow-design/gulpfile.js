@@ -19,7 +19,7 @@ function serve(done) {
     done();
 }
 
-const handleError = (done) => {
+const handleError = (done) => {  
     return function (err) {
         if (err) {
             beeper();

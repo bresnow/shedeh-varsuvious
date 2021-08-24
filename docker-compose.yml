@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   ghost-theme-docker:
-    image: ghostlocal
-  
+    build:
+      context: .
     container_name: shedeh
     restart: unless-stopped
     volumes:

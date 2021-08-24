@@ -51,6 +51,7 @@
         "gulp": "4.0.2",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "9.0.0",
+        "gulp-sass": "^5.0.0",
         "gulp-sourcemaps": "3.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-util": "3.0.8",
@@ -58,7 +59,8 @@
         "gulp-zip": "5.1.0",
         "postcss": "8.3.5",
         "postcss-color-mod-function": "3.0.3",
-        "postcss-easy-import": "3.0.0"
+        "postcss-easy-import": "3.0.0",
+        "sass": "^1.35.2"
     },
     "browserslist": [
         "defaults"
